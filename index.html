@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact US</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+        background-color: lightgrey;
+        justify-content: center;
+        display: flex;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+      }
+      .container {
+        width: 50%;
+        height: 100vh;
+        background-color: blue;
+        text-align: center;
+        flex-direction: column;
+      }
+      h1 {
+        font-size: 48px;
+      }
+      .fields {
+        display: grid;
+        text-align: left;
+        padding-left: 190px;
+      }
+      label {
+        padding: 20px;
+      }
+      input[type="text"] {
+        padding-left: 0px;
+      }
+      input {
+        width: 50%;
+        height: 30px;
+      }
+      #message {
+        height: 150px;
+      }
+      button {
+        width: 50%;
+        height: 30px;
+        margin-top: 20px;
+        font-size: 20px;
+        background-color: rgb(29, 157, 226);
+        box-shadow: 2px 2px 2px rgb(48, 205, 248);
+        border: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <span id="msg"
+        >Got a question ? We'd love to hear from you. Send a message<br />
+        we'd respond as soon as possible</span
+      >
+      <form action="" method="get">
+        <label for="" class="fields">NAME:</label>
+        <input type="text" name="name" id="Name" />
+
+        <label for="" class="fields">EMAIL:</label>
+        <input type="text" name="email" id="email" />
+
+        <label for="" class="fields">Message:</label>
+        <input type="text" name="message" id="message" />
+        <br />
+        <button id="btn">Send Message</button>
+      </form>
+    </div>
+    <a href="./users.html"></a>
+    <script src="./script.js">
+      
+    </script>
+    <script type="module" src="./Firebase.js"></script>
+  </body>
+</html>
